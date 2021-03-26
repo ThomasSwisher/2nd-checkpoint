@@ -1,0 +1,15 @@
+header {
+    height: 20vh;
+}
+
+body {
+    background-color: #081b2a;
+}
+
+.moon {
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
