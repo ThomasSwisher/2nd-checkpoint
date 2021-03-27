@@ -3,24 +3,40 @@ let alShipsAcquired = 0
 let upgradeIn = 10
 let purchaseUpgrades = {
     alienShips1: {
+        price: 10,
+        quantity: 0,
+        multiplier: 2
+    }, alienShips2: {
+        price: 15,
+        quantity: 0,
+        multiplier: 10
+    }, alienShips3: {
         price: 20,
         quantity: 0,
-        multiplier: 1
-    }, alienShips2: {
-        price: 50,
+        multiplier: 15
+    }, alienShips4: {
+        price: 20,
         quantity: 0,
-        multiplier: 1
-    }, alienShips3: {
-        price: 100,
-        quantity: 0,
-        multiplier: 1
+        multiplier: 2
     }
 };
 
+
+// function multiplyUpgrade1() {
+//     if () { }
+// }
+
+// REVIEW
 function buyAlienShip1() {
-    if (aliensLanded >= 10) {
-        aliensLanded = aliensLanded - 10
-        alShipsAcquired = alShipsAcquired + 1
+    // NOTE access the object to get its price assign to variable
+    let ship = purchaseUpgrades.alienShips1
+
+    if (aliensLanded >= ship.price) {
+        aliensLanded = aliensLanded - ship.price
+        ship.quantity++
+        ship.price *= 2
+        // Click Upgrade
+        alShipsAcquired += ship.multiplier
         update()
     }
 }
@@ -48,7 +64,6 @@ function buyAlienShip4() {
     }
 }
 
-
 function mine() {
     aliensLanded = aliensLanded + 1;
     update()
@@ -57,10 +72,15 @@ function mine() {
 function update() {
     document.getElementById('aliensLanded').innerText = aliensLanded
     document.getElementById('upgradeNumber').innerText = alShipsAcquired
+    // NOTE make sure to update the price and quantity for the ships as well as it might have gone up
+
 }
 
-function collectAutoUpgrades() {
-    collectionInterval = setInterval(collectAutoUpgrades, 3000);
+function startInterval() {
+    collectionInterval = setInterval(collectAutoUpgrades,
+        alert(),
+        3000);
 }
 
 update()
+startInterval()
