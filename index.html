@@ -24,31 +24,33 @@
                     <div class="card" style="width: 18rem;">
 
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item">ALIENS LANDED = <span id="aliensLanded">0</span></li>
+                            <li class="list-group-item">ALIENS HARVESTED = <span id="aliensHarvested">0</span></li>
                             </li>
-                            <li class="list-group-item">UPGRADE 1 TOTAL = <span>10</span></li>
-                            <li class="list-group-item">UPGRADE 2 TOTAL = <span>10</span></li>
-                            <li class="list-group-item">UPGRADE 3 TOTAL = <span>10</span></li>
-                            <li class="list-group-item">UPGRADE 4 TOTAL = <span>10</span></li>
-                            <li class="list-group-item">TOTAL UPGRADES = <span id="upgradeNumber">0</span>
+                            <li class="list-group-item">X2 HARVESTERS = <span id="harvester-x2">0</span></li>
+                            <li class="list-group-item">X5 HARVESTERS = <span id="harvester-x5">0</span></li>
+                            <li class="list-group-item">X10 HARVERSTERS = <span id="harvester-x10">0</span></li>
+                            <li class="list-group-item">X20 HARVERSTERS = <span id="harvester-x20">0</span></li>
+                            <li class="list-group-item">TOTAL UPGRADES = <span id="upgradeNumber">0</span></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col">
                     <div class="card" style="width: 18rem;">
+                        <h3 class="d-flex justify-content-center">BUY HARVESTERS</h3>
                         <ul class="list-group list-group-flush">
-                            <li id="upgrade1" class="list-group-item">UPGRADE 1 = <span>x10</span> ALIENS <button
-                                    type="button" onclick="buyAlienShip1()"
-                                    class="btn btn-success w-100">UPGRADE</button></li>
-                            <li id="upgrade2" class="list-group-item ">UPGRADE 2 = <span>x15</span> ALIENS <button
-                                    type="button" onclick="buyAlienShip2()"
-                                    class="btn btn-success w-100">UPGRADE</button></li>
-                            <li id="upgrade3" class="list-group-item">UPGRADE 3 = <span>x20</span> ALIENS <button
-                                    type="button" onclick="buyAlienShip3()"
-                                    class="btn btn-success w-100 ">UPGRADE</button></li>
-                            <li id="upgrade4" class="list-group-item">UPGRADE 4 = <span>x30</span> ALIENS <button
-                                    type="button" onclick="buyAlienShip4()"
-                                    class="btn btn-success w-100 ">UPGRADE</button></li>
+                            <li id="upgrade1" class="list-group-item">BUY 1 SHIP X2 ALIENS<button type="button"
+                                    onclick="buyAlienShip1()" class="btn btn-success w-100"><span
+                                        id="priceUpdate">5</span> ALIENS TO
+                                    UPGRADE</button></li>
+                            <li id="upgrade2" class="list-group-item ">BUY 5 SHIPS X5 ALIENS <button type="button"
+                                    onclick="buyAlienShip2()" class="btn btn-success w-100">10 ALIENS TO
+                                    UPGRADE</button></li>
+                            <li id="upgrade3" class="list-group-item">BUY 10 SHIPS X10 ALIENS <button type="button"
+                                    onclick="buyAlienShip3()" class="btn btn-success w-100 ">15 ALIENS TO
+                                    UPGRADE</button></li>
+                            <li id="upgrade4" class="list-group-item">BUY 20 SHIPS X30 ALIENS <button type="button"
+                                    onclick="buyAlienShip4()" class="btn btn-success w-100 ">20 ALIENS TO
+                                    UPGRADE</button></li>
                         </ul>
                     </div>
                 </div>
