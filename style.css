@@ -13,3 +13,7 @@ body {
 .hidden {
     display: none;
 }
+
+.center-card {
+    margin: auto;
+}
