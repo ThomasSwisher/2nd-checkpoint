@@ -102,7 +102,7 @@ function mine() {
     update()
 }
 
-// NOTE using this function to execute changes to the DOM upon the completion of other           
+// NOTE using this function to execute changes to the DOM upon the completion of other functions.           
 function update() {
     document.getElementById('aliensHarvested').innerText = aliensHarvested
     document.getElementById('harvester-x2').innerText = x2Harvesters
@@ -111,7 +111,7 @@ function update() {
     document.getElementById('harvester-x20').innerText = x20Harvesters
     document.getElementById('upgradeNumber').innerText = x2Harvesters + x5Harvesters + x10Harvesters + x20Harvesters
     document.getElementById('priceUpdate').innerText = x2Adjustprice
-    // NOTE make sure to update the price and quantity for the ships as well as it might have gone up
+    // NOTE make sure to update the price and quantity for the ships as well as it might have gone up.
 }
 
 
